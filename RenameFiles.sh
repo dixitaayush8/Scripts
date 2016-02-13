@@ -11,8 +11,6 @@ read -p "Please enter file extension" kay
 
 for FILE in *.$kay
 do
-#if [ $kay == "jpg" ]
-#then
  read -p "Please enter a file prefix: (Press enter for ${DATE})" pref
  if [ -z $pref ]
  then
@@ -22,6 +20,5 @@ do
   mv $FILE $pref-$FILE
   NEWFILE=$pref-$FILE
  fi
-#fi
 echo "$NEWFILE"
 done
